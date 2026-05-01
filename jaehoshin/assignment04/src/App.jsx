@@ -27,7 +27,7 @@ function App() {
        {movie.map((item) => (
         <RecommendCard
         key={item.id}
-        name={item.title}
+        title={item.title}
         description={item.description}
        />
       ))}
@@ -40,7 +40,7 @@ function App() {
       {music.map((item) => (
         <RecommendCard
         key={item.id}
-        name={item.title}
+        title={item.title}
         description={item.description}
        />
       ))}
@@ -53,7 +53,7 @@ function App() {
       {book.map((item) => (
         <RecommendCard
         key={item.id}
-        name={item.title}
+        title={item.title}
         description={item.description}
        />
       ))}
