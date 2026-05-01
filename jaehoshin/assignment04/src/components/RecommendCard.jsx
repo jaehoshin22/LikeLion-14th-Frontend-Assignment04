@@ -1,4 +1,4 @@
-function RecommendCard({ name, description }) {
+function RecommendCard({ title, description }) {
     return (
         <div style={{
             border: '1px solid #ddd',
@@ -8,7 +8,7 @@ function RecommendCard({ name, description }) {
             width: '250px',
             boxShadow: '0 4px 10px rgba(0,0,0,0.1)'
         }}>
-            <h2>{name}</h2>
+            <h2>{title}</h2>
             <h4 style={{ color: '#555', margin: '5px 0' }}>설명: {description}</h4>
         </div>
 
