@@ -1,3 +1,7 @@
+// <메모>
+//flexWrap: 'wrap' : 요소들이 가능한 영역 내에서 벗어나지 않고 여러행으로 나누어 표현한다.
+//flexWrap: 'nowrap' : 요소들이 강제로 한줄로 배치되게 한다.
+
 import Header from './components/Header';
 import RecommendCard from './components/RecommendCard';
 import SectionTitle from './components/SectionTitle';
@@ -23,7 +27,7 @@ function App() {
       <main>
       <section style={{marginBottom: '50px'}}>
       <SectionTitle title="영화 추천" />
-      <div style={{ display: 'flex',justifyContent:'center', flexwrap: 'wrap', gap: '20px'}}>
+      <div style={{ display: 'flex',justifyContent:'center', flexWrap: 'wrap', gap: '20px'}}>
        {movie.map((item) => (
         <RecommendCard
         key={item.id}
@@ -36,7 +40,7 @@ function App() {
 
       <section style={{marginBottom: '50px'}}>
       <SectionTitle title="음악 추천" />
-      <div style={{ display: 'flex',justifyContent:'center', flexwrap: 'wrap', gap: '20px'}}>
+      <div style={{ display: 'flex',justifyContent:'center', flexWrap: 'wrap', gap: '20px'}}>
       {music.map((item) => (
         <RecommendCard
         key={item.id}
@@ -49,7 +53,7 @@ function App() {
 
       <section style={{marginBottom: '50px'}}>
       <SectionTitle title="책 추천" />
-      <div style={{ display: 'flex',justifyContent:'center', flexwrap: 'wrap', gap: '20px'}}>
+      <div style={{ display: 'flex',justifyContent:'center', flexWrap: 'wrap', gap: '20px'}}>
       {book.map((item) => (
         <RecommendCard
         key={item.id}
